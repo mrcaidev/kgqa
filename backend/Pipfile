@@ -8,6 +8,8 @@ jieba = "*"
 neo4j = "*"
 python-dotenv = "*"
 scikit-learn = "*"
+flask = "*"
+gunicorn = "*"
 
 [dev-packages]
 black = "*"
