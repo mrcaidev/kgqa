@@ -1,7 +1,14 @@
+from atexit import register
+
 from core import QA
+from dotenv import load_dotenv
 from flask import Flask, abort, jsonify, request
 
+load_dotenv()
+
 qa = QA()
+register(qa.close)
+
 app = Flask(__name__)
 
 

@@ -11,6 +11,9 @@ class QA:
         self._classifer = Classifier()
         self._database = Database()
 
+    def close(self):
+        self._database.close()
+
     def answer(self, sentence: str):
         print(f"问题：{sentence}")
 
