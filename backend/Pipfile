@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "tsinghua"
+
+[packages]
+jieba = "*"
+neo4j = "*"
+python-dotenv = "*"
+scikit-learn = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.10"
