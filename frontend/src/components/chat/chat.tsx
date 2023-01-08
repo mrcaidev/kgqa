@@ -11,9 +11,9 @@ export const Chat = () => {
   });
 
   return (
-    <main class="min-h-0 grow flex flex-col gap-6 relative pt-4 pb-8">
+    <main class="min-h-0 grow flex flex-col gap-4 relative pb-8">
       {isWaiting && <Waiting />}
-      <div class="grow flex flex-col-reverse px-4 py-2 list-none overflow-y-auto overscroll-contain">
+      <div class="grow flex flex-col-reverse p-4 pt-8 list-none overflow-y-auto overscroll-contain">
         <ol class="space-y-4">
           {messages.map(({ id, type, content }) => (
             <li key={id}>
