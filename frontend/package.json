@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "nanoid": "^4.0.0",
     "preact": "^10.11.3"
   },
   "devDependencies": {
