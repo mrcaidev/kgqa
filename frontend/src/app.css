@@ -7,6 +7,6 @@
     @apply w-2 h-2 bg-gray-100 dark:bg-gray-900;
   }
   *::-webkit-scrollbar-thumb {
-    @apply w-2 h-2 rounded bg-gray-300 dark:bg-gray-700;
+    @apply w-2 h-2 rounded bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700;
   }
 }

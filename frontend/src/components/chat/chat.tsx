@@ -13,13 +13,15 @@ export const Chat = () => {
   return (
     <main class="flex flex-col gap-6 relative max-w-5xl h-screen px-8 pt-20 pb-8 mx-auto">
       {isWaiting && <Waiting />}
-      <ol class="grow flex flex-col gap-4 pr-4 py-2 list-none overflow-auto">
-        {messages.map(({ id, type, content }) => (
-          <Message key={id} type={type}>
-            {content}
-          </Message>
-        ))}
-      </ol>
+      <div class="grow flex flex-col-reverse px-4 py-2 list-none overflow-y-auto">
+        <ol class="space-y-4">
+          {messages.map(({ id, type, content }) => (
+            <li key={id}>
+              <Message type={type}>{content}</Message>
+            </li>
+          ))}
+        </ol>
+      </div>
       <Ask dispatch={dispatch} />
     </main>
   );

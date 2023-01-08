@@ -7,9 +7,10 @@ type Props = {
 
 export const Message = ({ type, children }: Props) => {
   const style =
-    type === "question"
-      ? "self-end bg-sky-200 dark:bg-sky-800"
-      : "self-start bg-gray-200 dark:bg-gray-800";
+    "w-fit max-w-[90%] px-5 py-3 rounded overflow-hidden text-ellipsis " +
+    (type === "question"
+      ? "ml-auto bg-sky-200 dark:bg-sky-800"
+      : "mr-auto bg-gray-200 dark:bg-gray-800");
 
-  return <li class={"px-5 py-3 rounded " + style}>{children}</li>;
+  return <p class={style}>{children}</p>;
 };
