@@ -3,4 +3,5 @@ neo4j
 python-dotenv
 scikit-learn
 flask
+flask-cors
 gunicorn

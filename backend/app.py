@@ -3,6 +3,7 @@ from atexit import register
 from core import QA
 from dotenv import load_dotenv
 from flask import Flask, abort, jsonify, request
+from flask_cors import CORS
 
 load_dotenv()
 
@@ -10,6 +11,7 @@ qa = QA()
 register(qa.close)
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.post("/")
